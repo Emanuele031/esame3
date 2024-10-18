@@ -505,6 +505,23 @@ function classTr (){
 /* ESERCIZIO 29
   Crea una funzione chiamata "isItPrime" che riceve un numero come parametro e ritorna true se il numero fornito è un numero primo.
 */
+function isItPrime(num){
+  if (num <= 1){       //se il numero dovesse essere minore o uguale di 1 non è un numero primo
+    return false
+  }
+  for(let i = 2; i <= Math.sqrt(num); i++){   //qua si controlla 
+    if(num % i === 0){   
+      return false     //non è primo
+
+    }
+  }
+  return true   //è primo
+
+}
+
+
+
+
 
 /* Questo array viene usato per gli esercizi. Non modificarlo. */
 
